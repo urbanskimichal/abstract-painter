@@ -41,6 +41,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.processing/core
     compile group: 'org.processing', name: 'core', version: '3.2.3'
+
+    //local libs
+    compile fileTree(dir: 'libs/video', include: '*.jar')
+    compile fileTree(dir: 'libs/opencv_processing', include: '*.jar')
 }
 
 task runApp (dependsOn: 'classes', type: JavaExec) {
