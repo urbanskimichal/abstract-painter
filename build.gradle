@@ -43,6 +43,7 @@ dependencies {
 
     //local libs
     compile fileTree(dir: 'libs/video', include: '*.jar')
+
     compile fileTree(dir: 'libs/themidibus', include: '*.jar')
 
     // https://mvnrepository.com/artifact/org.scream3r/jssc
@@ -50,7 +51,6 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.processing/serial
     compile group: 'org.processing', name: 'serial', version: '3.2.3'
-
 }
 
 task runApp (dependsOn: 'classes', type: JavaExec) {
